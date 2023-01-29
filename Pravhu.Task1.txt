@@ -1,0 +1,53 @@
+Requirement –
+
+1.Read the master file data (1st file) and get the input from the user which column name needs to be 
+mapped and alternate part number fields column names also (including starting row number of that excel).
+2.Read the customer file (2nd file) along with the column name to be mapped with master file.
+
+3. After you have read both the files. Customer file column’s data to be mapped with master file. 
+If it is matches, then output file should contain the customer file column value and alternate part number’s value of
+ master file (Master file has more than one part number fields). The same way you must check the remaining rows of customer file.
+
+Ex – 
+Customer file has 20-part number means and master file has 1000 rows, 
+then the output file must have 20-part number along with master file’s alternate part numbers (alt part number 1, 2). 
+If alternate part number is not available in master file for the customer record,
+ then you have to show blank value for that alternate part number.
+Kindly read the requirement carefully and explain what you have understand on it and then you proceed with this work.
+
+
+
+Customer file.xls
+CustomerId     Master Id
+1		   1
+2		   2
+3		   2
+4		   3
+5		   3
+6		   4
+7		   5
+
+
+
+
+Master File.xls
+
+MasterId  MasterData
+1		XX
+2		YY
+3		ZZ
+4		AA
+5		BB
+
+
+Output : Mergerd two file
+
+CustomerId  MasterId  MasterData
+1		1		XX
+2		2		YY
+3		2		YY
+4		3		ZZ
+5		3		ZZ
+6		4		AA
+7		5		BB
+
